@@ -119,8 +119,26 @@
         footer {
             margin-top: 60px;
             text-align: center;
-            opacity: 0.7;
+            opacity: 0.9;
+        }
+        .social-links {
+            margin-bottom: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 2.5em;
+            color: var(--text);
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            color: var(--accent);
+            transform: translateY(-8px) scale(1.2);
+            text-shadow: 0 0 20px var(--accent-glow);
+        }
+        footer p {
             font-size: 0.9em;
+            opacity: 0.7;
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(30px); }
@@ -131,8 +149,10 @@
             .profile-img { width: 130px; height: 130px; }
             .tagline { font-size: 1.1em; }
             .sections { gap: 25px; }
+            .social-links a { font-size: 2.2em; margin: 0 12px; }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -202,7 +222,21 @@
     </div>
 
     <footer>
+        <div class="social-links">
+            <a href="https://discord.com/users/YOUR_DISCORD_ID" target="_blank" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/YOUR_X_USERNAME" target="_blank" title="X / Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
         <p>© 2025 TheRealVenom • Built with passion & code</p>
     </footer>
 </body>
-</html>
+                </html>
