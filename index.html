@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheRealVenom</title>
+    <meta name="description" content="TheRealVenom - A guy who loves coding, Discord bots, and building powerful projects.">
+    <meta property="og:image" content="https://i.ibb.co/RThVpXSX/1000039708-jpg.jpg">
+    <link rel="icon" href="https://i.ibb.co/RThVpXSX/1000039708-jpg.jpg">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --card-bg: #121212;
+            --text: #e0e0e0;
+            --accent: #00ff9d;
+            --accent-glow: #00ff9d44;
+            --border: #222;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeIn 1.5s ease-out;
+        }
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 5px solid var(--accent);
+            box-shadow: 0 0 30px var(--accent-glow);
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+        .profile-img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        h1 {
+            margin: 15px 0 10px;
+            font-size: 2.8em;
+            background: linear-gradient(90deg, #00ff9d, #00b36b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+        .tagline {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1300px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+            transition: all 0.4s ease;
+            border: 1px solid var(--border);
+        }
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 15px 40px var(--accent-glow);
+            border-color: var(--accent);
+        }
+        .card h2 {
+            text-align: center;
+            color: var(--accent);
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .card h2::after {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background: var(--accent);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+        .item {
+            background: #1e1e1e;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid #333;
+        }
+        .item:hover {
+            background: var(--accent);
+            color: black;
+            transform: scale(1.08);
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.3em; }
+            .profile-img { width: 130px; height: 130px; }
+            .tagline { font-size: 1.1em; }
+            .sections { gap: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.ibb.co/RThVpXSX/1000039708-jpg.jpg" alt="TheRealVenom" class="profile-img">
+        <h1>TheRealVenom</h1>
+        <p class="tagline">A Guy Who Just Loves Coding, Discord Bots & Building Powerful Projects!</p>
+    </header>
+
+    <div class="sections">
+        <div class="card">
+            <h2>Languages</h2>
+            <div class="items">
+                <div class="item">Node.js</div>
+                <div class="item">Python</div>
+                <div class="item">JavaScript</div>
+                <div class="item">HTML</div>
+                <div class="item">CSS</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Frameworks</h2>
+            <div class="items">
+                <div class="item">Docker</div>
+                <div class="item">Next.js</div>
+                <div class="item">React</div>
+                <div class="item">Tailwind CSS</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Software</h2>
+            <div class="items">
+                <div class="item">VS Code</div>
+                <div class="item">CodeSandbox</div>
+                <div class="item">Replit</div>
+                <div class="item">MongoDB</div>
+                <div class="item">SQLite</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Main Projects</h2>
+            <div class="items">
+                <div class="item">Minecraft Hosting</div>
+                <div class="item">Pterodactyl Panel</div>
+                <div class="item">Puffer Panel</div>
+                <div class="item">Draco Panel</div>
+                <div class="item">Hydra Panel</div>
+                <div class="item">Skyport Panel</div>
+                <div class="item">OverSea Panel</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Discord Bots</h2>
+            <div class="items">
+                <div class="item">System Bot</div>
+                <div class="item">Music Bot</div>
+                <div class="item">Ticket Bot</div>
+                <div class="item">Giveaway Bot</div>
+                <div class="item">Game Bot</div>
+                <div class="item">Buy Roles Bot</div>
+                <div class="item">Buy Server Bot</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 TheRealVenom • Built with passion & code</p>
+    </footer>
+</body>
+</html>
